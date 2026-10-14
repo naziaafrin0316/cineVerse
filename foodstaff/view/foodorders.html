@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Food Orders</title>
+</head>
+<body>
+
+    <table cellpadding="10">
+        <tr>
+            <td><a href="foodstaffdashboard.html">Dashboard</a></td>
+            <td><a href="foodmenu.html">Food Menu</a></td>
+            <td><a href="foodorders.html">Food Orders</a></td>
+            <td><a href="../../commonui/login.html">Logout</a></td>
+        </tr>
+    </table>
+    <hr>
+
+    <h1>Food Orders</h1>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Order ID</th>
+            <th>Hall &amp; Seat</th>
+            <th>Items</th>
+            <th>Total (Tk)</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>FO-101</td>
+            <td>Hall 1 - C5</td>
+            <td>Salted Popcorn, Cola</td>
+            <td>330</td>
+            <td>
+                <select name="status101">
+                    <option selected>Pending</option>
+                    <option>Preparing</option>
+                    <option>Delivered</option>
+                </select>
+            </td>
+            <td><button type="button">Update</button></td>
+        </tr>
+        <tr>
+            <td>FO-102</td>
+            <td>Hall 2 - F12</td>
+            <td>Combo Pack</td>
+            <td>400</td>
+            <td>
+                <select name="status102">
+                    <option>Pending</option>
+                    <option selected>Preparing</option>
+                    <option>Delivered</option>
+                </select>
+            </td>
+            <td><button type="button">Update</button></td>
+        </tr>
+        <tr>
+            <td>FO-103</td>
+            <td>Hall 1 - A3</td>
+            <td>Nachos with Cheese</td>
+            <td>220</td>
+            <td>
+                <select name="status103">
+                    <option>Pending</option>
+                    <option>Preparing</option>
+                    <option selected>Delivered</option>
+                </select>
+            </td>
+            <td><button type="button">Update</button></td>
+        </tr>
+    </table>
+
+</body>
+</html>

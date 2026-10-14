@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Food Menu</title>
+</head>
+<body>
+
+    <table cellpadding="10">
+        <tr>
+            <td><a href="foodstaffdashboard.html">Dashboard</a></td>
+            <td><a href="foodmenu.html">Food Menu</a></td>
+            <td><a href="foodorders.html">Food Orders</a></td>
+            <td><a href="../../commonui/login.html">Logout</a></td>
+        </tr>
+    </table>
+    <hr>
+
+    <h1>Food Menu</h1>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>No.</th>
+            <th>Item</th>
+            <th>Category</th>
+            <th>Price (Tk)</th>
+            <th>Availability</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Salted Popcorn</td>
+            <td>Popcorn</td>
+            <td>250</td>
+            <td>Available</td>
+            <td><button type="button">Edit</button> <button type="button">Remove</button></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Caramel Popcorn</td>
+            <td>Popcorn</td>
+            <td>300</td>
+            <td>Available</td>
+            <td><button type="button">Edit</button> <button type="button">Remove</button></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Cola (500ml)</td>
+            <td>Beverage</td>
+            <td>80</td>
+            <td>Available</td>
+            <td><button type="button">Edit</button> <button type="button">Remove</button></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Nachos with Cheese</td>
+            <td>Snacks</td>
+            <td>220</td>
+            <td>Available</td>
+            <td><button type="button">Edit</button> <button type="button">Remove</button></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>French Fries</td>
+            <td>Fast Food</td>
+            <td>150</td>
+            <td>Out of Stock</td>
+            <td><button type="button">Edit</button> <button type="button">Remove</button></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Combo Pack (Popcorn + 2 Cola)</td>
+            <td>Combo</td>
+            <td>400</td>
+            <td>Available</td>
+            <td><button type="button">Edit</button> <button type="button">Remove</button></td>
+        </tr>
+    </table>
+
+    <h2>Add New Item</h2>
+    <form action="#" method="post">
+        <table cellpadding="8">
+            <tr>
+                <td><label for="iname">Item Name:</label></td>
+                <td><input type="text" id="iname" name="iname" required></td>
+
+                <td><label for="icat">Category:</label></td>
+                <td>
+                    <select id="icat" name="icat">
+                        <option value="popcorn">Popcorn</option>
+                        <option value="beverage">Beverage</option>
+                        <option value="snacks">Snacks</option>
+                        <option value="fastfood">Fast Food</option>
+                        <option value="combo">Combo</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="iprice">Price (Tk):</label></td>
+                <td><input type="number" id="iprice" name="iprice" min="0" required></td>
+
+                <td>Availability:</td>
+                <td>
+                    <input type="radio" id="av1" name="avail" value="yes" checked>
+                    <label for="av1">Available</label>
+                    <input type="radio" id="av2" name="avail" value="no">
+                    <label for="av2">Out of Stock</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <input type="submit" value="Add Item">
+                    <input type="reset" value="Clear">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

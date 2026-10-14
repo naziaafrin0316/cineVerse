@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Food Staff Registration</title>
+</head>
+<body>
+
+    <h1>Food Staff Registration</h1>
+    <p>Register as a food and beverage staff member of the cinema hall.</p>
+
+    <form action="foodstaffdashboard.html" method="get">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <table cellpadding="8">
+                <tr>
+                    <td><label for="fname">Full Name:</label></td>
+                    <td><input type="text" id="fname" name="fname" required></td>
+
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone:</label></td>
+                    <td><input type="tel" id="phone" name="phone" required></td>
+
+                    <td><label for="dob">Date of Birth:</label></td>
+                    <td><input type="date" id="dob" name="dob" required></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td colspan="3">
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label>
+
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Food Staff Information</legend>
+
+            <table cellpadding="8">
+                <tr>
+                    <td><label for="staffid">Food Staff ID:</label></td>
+                    <td><input type="text" id="staffid" name="staffid" required></td>
+
+                    <td><label for="branch">Cinema Branch:</label></td>
+                    <td>
+                        <select id="branch" name="branch" required>
+                            <option value="">-- Select Branch --</option>
+                            <option value="main">Main Hall</option>
+                            <option value="mall">Mall Branch</option>
+                            <option value="city">City Center Branch</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="counter">Assigned Counter:</label></td>
+                    <td>
+                        <select id="counter" name="counter" required>
+                            <option value="">-- Select Counter --</option>
+                            <option value="popcorn">Popcorn Counter</option>
+                            <option value="beverage">Beverage Counter</option>
+                            <option value="snacks">Snacks Counter</option>
+                            <option value="delivery">Seat Delivery</option>
+                        </select>
+                    </td>
+
+                    <td><label for="shift">Shift:</label></td>
+                    <td>
+                        <select id="shift" name="shift" required>
+                            <option value="">-- Select Shift --</option>
+                            <option value="morning">Morning</option>
+                            <option value="evening">Evening</option>
+                            <option value="night">Night</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="cert">Certificate No:</label></td>
+                    <td><input type="text" id="cert" name="cert" required></td>
+
+                    <td><label for="exp">Years of Experience:</label></td>
+                    <td><input type="number" id="exp" name="exp" min="0" max="40"></td>
+                </tr>
+                <tr>
+                    <td><label for="joindate">Joining Date:</label></td>
+                    <td><input type="date" id="joindate" name="joindate" required></td>
+
+                    <td><label for="emergency">Emergency Contact:</label></td>
+                    <td><input type="tel" id="emergency" name="emergency" required></td>
+                </tr>
+                <tr>
+                    <td>Specialty:</td>
+                    <td colspan="3">
+                        <input type="checkbox" id="s1" name="specialty" value="popcorn">
+                        <label for="s1">Popcorn</label>
+
+                        <input type="checkbox" id="s2" name="specialty" value="drinks">
+                        <label for="s2">Drinks</label>
+
+                        <input type="checkbox" id="s3" name="specialty" value="fastfood">
+                        <label for="s3">Fast Food</label>
+
+                        <input type="checkbox" id="s4" name="specialty" value="combo">
+                        <label for="s4">Combo Packs</label>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Account Security</legend>
+
+            <table cellpadding="8">
+                <tr>
+                    <td><label for="pass">Password:</label></td>
+                    <td><input type="password" id="pass" name="pass" minlength="8" required></td>
+
+                    <td><label for="cpass">Confirm Password:</label></td>
+                    <td><input type="password" id="cpass" name="cpass" minlength="8" required></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+
+    </form>
+
+    <p>Already registered? <a href="../../commonui/login.html">Login here</a></p>
+
+</body>
+</html>
