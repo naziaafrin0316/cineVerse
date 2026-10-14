@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CineVerse - Login</title>
+</head>
+<body>
+
+    <table width="100%" cellpadding="10">
+        <tr>
+            <td>
+                <h1>CineVerse</h1>
+                <i>Online Cinema Ticket Booking and Hall Management System</i>
+            </td>
+        </tr>
+    </table>
+
+    <table width="100%" cellpadding="10" border="3">
+        <tr>
+            <td>Home</td>
+            <td>About</td>
+            <td>Services</td>
+            <td>Register</td>
+            <td>Login</td>
+        </tr>
+    </table>
+
+    <h2>User Login</h2>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Login</legend>
+            <table cellpadding="8">
+                <tr>
+                    <td><label for="user">Username / Email:</label></td>
+                    <td><input type="text" id="user" name="user" required></td>
+                </tr>
+                <tr>
+                    <td><label for="pass">Password:</label></td>
+                    <td><input type="password" id="pass" name="pass" required></td>
+                </tr>
+                <tr>
+                    <td>Select User Type:</td>
+                    <td>
+                        <input type="radio" id="customer" name="usertype" value="customer">
+                        <label for="customer">Customer</label><br>
+
+                        <input type="radio" id="staff" name="usertype" value="staff">
+                        <label for="staff">Staff</label><br>
+
+                        <input type="radio" id="foodstaff" name="usertype" value="foodstaff">
+                        <label for="foodstaff">Food Staff</label><br>
+
+                        <input type="radio" id="admin" name="usertype" value="admin">
+                        <label for="admin">Admin</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Login">
+                        <input type="reset" value="Clear">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+
+    <p>New user? <a href="home.html#register">Register here</a></p>
+
+</body>
+</html>
