@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Delete Movie</title>
+</head>
+<body>
+
+    <h1>Delete Movie</h1>
+
+    <form>
+        <label>Select Movie:</label>
+        <select name="movie" required>
+            <option value="">Choose Movie</option>
+            <option>Avengers</option>
+            <option>Avatar</option>
+            <option>Inception</option>
+        </select>
+        <br>
+        <br>
+
+        <label>Enter Movie ID:</label>
+        <input type="number" name="movieId" min="1" required>
+        <br>
+        <br>
+
+        <label>Reason for Deletion:</label>
+        <textarea name="reason" rows="3" cols="30"></textarea>
+        <br>
+        <br>
+
+    <label>
+        <input type="checkbox" name="confirm" required>
+        I confirm that I want to delete this movie.
+    </label>    
+        <br>
+        <br>
+    
+        <input type="submit" value="Delete Movie">
+        <input type="reset" value="Clear">
+
+    </form>
+
+    <br>
+    <a href="staff-dashboard.html">Back to Dashboard</a>
+
+</body>
+</html>

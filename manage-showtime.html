@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Manage Showtime</title>
+</head>
+<body>
+
+    <h1>Manage Showtime</h1>
+
+    <form>
+        <label>Select Movie:</label>
+        <select name="movie" required>
+            <option value="">Choose Movie</option>
+            <option>Avengers</option>
+            <option>Avatar</option>
+            <option>Inception</option>
+        </select>
+        <br>
+        <br>
+
+        <label>Show Date:</label>
+        <input type="date" name="showDate" required>
+        <br>
+        <br>
+
+        <label>Show Time:</label>
+        <input type="time" name="showTime" required>
+        <br>
+        <br>
+
+        <label>Venue:</label>
+        <select name="venue" required>
+            <option value="">Select Venue</option>
+            <option>Hall 1</option>
+            <option>Hall 2</option>
+            <option>Hall 3</option>
+        </select>
+        <br>
+        <br>
+
+        <label>Ticket Price:</label>
+        <input type="number" name="price" min="1">
+        <br>
+        <br>
+
+        <label>Available Seats:</label>
+        <input type="number" name="seats" min="0">
+        <br>
+        <br>
+
+        <label>Action:</label>
+        <input type="radio" name="action" value="update"> Update
+        <input type="radio" name="action" value="delete"> Delete
+        <br>
+        <br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+
+    </form>
+
+    <br>
+    <a href="staff-dashboard.html">Back to Dashboard</a>
+
+</body>
+</html>

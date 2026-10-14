@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add Movie</title>
+</head>
+<body>
+
+    <h1>Add New Movie</h1>
+
+    <form>
+        <label>Movie Name:</label>
+        <input type="text" name="movieName" placeholder="Enter movie name" required>
+        <br>
+        <br>
+
+        <label>Genre:</label>
+        <select name="genre" required>
+            <option value="">Select Genre</option>
+            <option>Action</option>
+            <option>Comedy</option>
+            <option>Horror</option>
+            <option>Romance</option>
+            <option>Drama</option>
+        </select>
+        <br>
+        <br>
+
+        <label>Release Date:</label>
+        <input type="date" name="releaseDate">
+        <br>
+        <br>
+
+        <label>Duration:</label>
+        <input type="number" name="duration" min="1">
+        <br>
+        <br>
+
+        <label>Language:</label>
+        <input type="text" name="language">
+        <br>
+        <br>
+
+        <label>Movie Description:</label>
+        <textarea name="description" rows="4" cols="30"></textarea>
+        <br>
+        <br>
+
+        <label>Movie Poster:</label>
+        <input type="file" name="poster" accept="image/*">
+        <br>
+        <br>
+
+        <label>Movie Type:</label>
+        <input type="radio" name="movieType" value="2D"> 2D
+        <input type="radio" name="movieType" value="3D"> 3D
+        <br>
+        <br>
+
+        <label>
+            <input type="checkbox" name="available" value="yes">
+            Movie Available
+        </label>
+        <br>
+        <br>
+
+        <input type="submit" value="Add Movie">
+        <input type="reset" value="Clear">
+
+    </form>
+
+    <br>
+    <a href="staff-dashboard.html">Back to Dashboard</a>
+
+</body>
+</html>
