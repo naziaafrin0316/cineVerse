@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Registration</title>
+</head>
+<body>
+
+    <h1>MovieBook</h1>
+    <h2>Customer Registration Form</h2>
+
+    <p>Create an account to book movie tickets.</p>
+
+    <form action="upcoming.html" method="get">
+
+        <label for="fullname">Full Name:</label>
+        <br>
+        <input type="text" id="fullname"
+        name="fullname"
+        placeholder="Enter your full name" required>
+        <br><br>
+
+        <label for="phone">Phone Number:</label>
+        <br>
+        <input type="tel" id="phone"
+        name="phone"
+        placeholder="01XXXXXXXXX"
+        inputmode="numeric"
+        minlength="11"
+        maxlength="11"
+        pattern="[0-9]{11}"
+        title="Enter exactly 11 digits"
+        required>
+        <br><br>
+
+        <label for="password">Password:</label>
+        <br>
+        <input type="password" id="password"
+        name="password"
+        placeholder="Create a password" required>
+        <br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear Form">
+
+    </form>
+
+    <hr>
+
+    <p>Already have an account?</p>
+
+</body>
+</html>

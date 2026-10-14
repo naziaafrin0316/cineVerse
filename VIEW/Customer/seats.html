@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Available Seats</title>
+</head>
+<body>
+
+    <h1>MovieBook</h1>
+    <h2>Available Seats and Seat Selection</h2>
+
+    <a href="upcoming.html">Upcoming Movies</a> |
+    <a href="new-movies.html">New Movies</a> |
+    <a href="time-slot.html">Time Slot</a> |
+    <a href="venue.html">Venue</a> |
+    <a href="seats.html">Available Seats</a> |
+    <a href="payment.html">Payment</a> |
+
+    <hr>
+
+
+    <h3>Screen</h3>
+    <p>---------------- SCREEN ----------------</p>
+
+    <h3>Select Your Seats</h3>
+
+    <form action="payment.html" method="get">
+
+        <p>Row A</p>
+
+        <input type="checkbox" name="seat" value="A1"> A1
+        <input type="checkbox" name="seat" value="A2"> A2
+        <input type="checkbox" name="seat" value="A3"> A3
+        <input type="checkbox" name="seat" value="A4"> A4
+
+        <hr>
+
+        <p>Row B</p>
+
+        <input type="checkbox" name="seat" value="B1"> B1
+        <input type="checkbox" name="seat" value="B2"> B2
+        <input type="checkbox" name="seat" value="B3"> B3
+        <input type="checkbox" name="seat" value="B4"> B4
+
+        <hr>
+
+        <p>Row C</p>
+
+        <input type="checkbox" name="seat" value="C1"> C1
+        <input type="checkbox" name="seat" value="C2"> C2
+        <input type="checkbox" name="seat" value="C3" disabled> C3 (Booked)
+        <input type="checkbox" name="seat" value="C4"> C4
+
+        <br><br>
+
+        <input type="submit" value="Continue to Payment">
+
+    </form>
+
+    <p>Note: Seat selection is a demonstration only.</p>
+
+</body>
+</html>

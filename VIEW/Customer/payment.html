@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Details</title>
+</head>
+<body>
+
+    <h1>Movie Ticket Booking System</h1>
+    <h2>Payment Details</h2>
+    <a href="upcoming.html">Upcoming Movies</a> |
+    <a href="new-movies.html">New Movies</a> |
+    <a href="time-slot.html">Time Slot</a> |
+    <a href="venue.html">Venue</a> |
+    <a href="seats.html">Available Seats</a> |
+    <a href="payment.html">Payment</a> |
+    
+
+
+    <hr>
+
+    <h3>Customer Information</h3>
+
+
+    <form action="payment-success.html" method="get">
+
+        Name:
+        <input type="text" name="customer_name" required>
+        <br><br>
+
+        Email:
+        <input type="email" name="email" required>
+        <br><br>
+
+        Phone Number:
+        <input type="tel" name="phone" required>
+        <br><br>
+
+
+        <h3>Select Payment Method</h3>
+
+        <input type="radio" name="payment_method"
+        value="bKash" required>
+        bKash
+        <br><br>
+
+        <input type="radio" name="payment_method"
+        value="Nagad">
+        Nagad
+        <br><br>
+
+        <input type="radio" name="payment_method"
+        value="Card">
+        Credit/Debit Card
+        <br><br>
+
+        <hr>
+
+        <h3>bKash Payment Information</h3>
+
+        bKash Account Number:
+        <input type="tel" name="bkash_number"
+        placeholder="01XXXXXXXXX">
+        <br>
+
+        <p>Enter your bKash payment reference if applicable.</p>
+
+        bKash Transaction Reference:
+        <input type="text" name="bkash_reference">
+        <br><br>
+
+        <hr>
+
+        <h3>Nagad Payment Information</h3>
+
+        Nagad Account Number:
+        <input type="tel" name="nagad_number"
+        placeholder="01XXXXXXXXX">
+        <br><br>
+
+        Nagad Transaction Reference:
+        <input type="text" name="nagad_reference">
+        <br><br>
+
+        <hr>
+
+        <h3>Credit/Debit Card Information</h3>
+
+        Cardholder Name:
+        <input type="text" name="cardholder_name">
+        <br><br>
+
+        Card Number:
+        <input type="text" name="card_number">
+        <br><br>
+
+        Expiry Date:
+        <input type="month" name="expiry_date">
+        <br><br>
+
+
+        <hr>
+
+        <input type="submit" value="Complete Payment">
+
+        <input type="reset" value="Reset">
+
+    </form>
+
+    <br>
+
+    <a href="seats.html">Back to Select Seats</a>
+    <br><br>
+
+    <a href="upcoming.html">Back to Home</a>
+
+</body>
+</html>
