@@ -1,0 +1,421 @@
+/* UPCOMING PAGE */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+    color: black;
+    margin: 20px;
+}
+
+h1 {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+h2 {
+    color: darkblue;
+    text-align: center;
+}
+
+
+p {
+    font-size: 16px;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+
+h3 {
+    color: darkblue;
+}
+
+
+hr {
+    border: 1px solid gray;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.show-time {
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+
+.show-time:hover {
+    background-color: navy;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* NEW MOVIES PAGE */
+
+.book-now {
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+
+.book-now:hover {
+    background-color: navy;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* TIME SLOT PAGE */
+
+form {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid gray;
+}
+
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+
+input[type="submit"] {
+    background-color: blue;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: navy;
+}
+
+/* VENUE PAGE */
+
+form {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid gray;
+}
+
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+
+form p {
+    color: gray;
+    margin-left: 25px;
+}
+
+form hr {
+    border: 1px solid lightgray;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+input[type="submit"] {
+    background-color: blue;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+input[type="submit"]:hover {
+    background-color: navy;
+}
+
+
+/* AVAILABLE SEATS PAGE */
+
+
+h3 {
+    color: darkblue;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid gray;
+}
+
+
+form p {
+    font-weight: bold;
+    color: darkblue;
+}
+
+
+input[type="checkbox"] {
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+input[type="checkbox"]:disabled {
+    cursor: not-allowed;
+}
+
+form hr {
+    border: 1px solid lightgray;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+input[type="submit"] {
+    background-color: blue;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+input[type="submit"]:hover {
+    background-color: navy;
+}
+
+body > p {
+    color: gray;
+    font-size: 14px;
+}
+
+/* PAYMENT PAGE */
+
+
+h3 {
+    color: darkblue;
+}
+
+
+form {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid gray;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="month"] {
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="month"]:focus {
+    border-color: blue;
+    outline: none;
+}
+
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+
+input[type="submit"] {
+    background-color: green;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+
+input[type="reset"] {
+    background-color: gray;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+
+input[type="submit"]:hover {
+    background-color: darkgreen;
+}
+
+input[type="reset"]:hover {
+    background-color: black;
+}
+
+
+form p {
+    color: gray;
+    font-size: 14px;
+}
+
+
+form hr {
+    border: 1px solid lightgray;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* PAYMENT SUCCESS PAGE */
+
+
+h1 {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+
+h2 {
+    color: green;
+    text-align: center;
+}
+
+
+p {
+    text-align: center;
+    font-size: 18px;
+    color: black;
+}
+
+hr {
+    border: 1px solid lightgray;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+
+/* CUSTOMER REGISTRATION PAGE */
+
+
+h1 {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+
+h2 {
+    color: darkblue;
+    text-align: center;
+}
+
+
+p {
+    font-size: 16px;
+    color: black;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid gray;
+}
+
+
+label {
+    font-weight: bold;
+}
+
+
+input[type="text"],
+input[type="tel"],
+input[type="password"] {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus {
+    border-color: blue;
+    outline: none;
+}
+
+
+input[type="submit"] {
+    background-color: green;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+
+input[type="reset"] {
+    background-color: gray;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: darkgreen;
+}
+
+
+input[type="reset"]:hover {
+    background-color: black;
+}
+
+
+hr {
+    border: 1px solid lightgray;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
