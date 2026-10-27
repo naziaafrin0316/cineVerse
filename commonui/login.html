@@ -2,69 +2,55 @@
 <html>
 <head>
     <title>CineVerse - Login</title>
+    <link rel="stylesheet" href="../foodstaff/css/foodstaff.css">
 </head>
 <body>
 
-    <table width="100%" cellpadding="10">
-        <tr>
-            <td>
-                <h1>CineVerse</h1>
-                <i>Online Cinema Ticket Booking and Hall Management System</i>
-            </td>
-        </tr>
-    </table>
+    <div class="header">
+        <h1 id="logo">CineVerse</h1>
+        <p id="tagline">Online Cinema Ticket Booking and Hall Management System</p>
+    </div>
 
-    <table width="100%" cellpadding="10" border="3">
-        <tr>
-            <td>Home</td>
-            <td>About</td>
-            <td>Services</td>
-            <td>Register</td>
-            <td>Login</td>
-        </tr>
-    </table>
+    <ul class="navbar">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="home.html#about">About</a></li>
+        <li><a href="home.html#services">Services</a></li>
+        <li><a href="home.html#register">Register</a></li>
+        <li><a class="active" href="login.html">Login</a></li>
+    </ul>
 
-    <h2>User Login</h2>
+    <div class="form-container">
 
-    <form action="#" method="post">
-        <fieldset>
-            <legend>Login</legend>
-            <table cellpadding="8">
-                <tr>
-                    <td><label for="user">Username / Email:</label></td>
-                    <td><input type="text" id="user" name="user" required></td>
-                </tr>
-                <tr>
-                    <td><label for="pass">Password:</label></td>
-                    <td><input type="password" id="pass" name="pass" required></td>
-                </tr>
-                <tr>
-                    <td>Select User Type:</td>
-                    <td>
-                        <input type="radio" id="customer" name="usertype" value="customer">
-                        <label for="customer">Customer</label><br>
+        <h2>User Login</h2>
 
-                        <input type="radio" id="staff" name="usertype" value="staff">
-                        <label for="staff">Staff</label><br>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Login</legend>
 
-                        <input type="radio" id="foodstaff" name="usertype" value="foodstaff">
-                        <label for="foodstaff">Food Staff</label><br>
+                <label for="user">Username / Email:</label><br>
+                <input type="text" id="user" name="user" required><br><br>
 
-                        <input type="radio" id="admin" name="usertype" value="admin">
-                        <label for="admin">Admin</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="submit" value="Login">
-                        <input type="reset" value="Clear">
-                    </td>
-                </tr>
-            </table>
-        </fieldset>
-    </form>
+                <label for="pass">Password:</label><br>
+                <input type="password" id="pass" name="pass" required><br><br>
 
-    <p>New user? <a href="home.html#register">Register here</a></p>
+                <label for="usertype">Select User Type:</label><br>
+                <input type="radio" id="customer" name="usertype" value="customer">
+                <label for="customer">Customer</label><br>
+                <input type="radio" id="staff" name="usertype" value="staff">
+                <label for="staff">Staff</label><br>
+                <input type="radio" id="foodstaff" name="usertype" value="foodstaff">
+                <label for="foodstaff">Food Staff</label><br>
+                <input type="radio" id="admin" name="usertype" value="admin">
+                <label for="admin">Admin</label><br><br>
+
+                <input type="submit" value="Login">
+                <input type="reset" value="Clear">
+            </fieldset>
+        </form>
+
+        <p>New user? <a href="home.html#register">Register here</a></p>
+
+    </div>
 
 </body>
 </html>

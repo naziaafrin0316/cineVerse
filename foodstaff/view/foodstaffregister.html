@@ -1,148 +1,130 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Food Staff Registration</title>
+  <title>Food Staff Registration</title>
+  <link rel="stylesheet" href="../css/foodstaff.css">
 </head>
 <body>
 
-    <h1>Food Staff Registration</h1>
+  <div class="header">
+    <h1 id="logo">CineVerse</h1>
+    <p id="tagline">Online Cinema Ticket Booking and Hall Management System</p>
+  </div>
+
+  <ul class="navbar">
+    <li><a href="../../commonui/home.html">Home</a></li>
+    <li><a href="../../commonui/login.html">Login</a></li>
+    <li><a class="active" href="foodstaffregister.html">Register</a></li>
+  </ul>
+
+  <div class="form-container">
+
+    <h2>Food Staff Registration</h2>
     <p>Register as a food and beverage staff member of the cinema hall.</p>
 
     <form action="foodstaffdashboard.html" method="get">
 
-        <fieldset>
-            <legend>Personal Information</legend>
+      <fieldset>
+        <legend>Personal Information</legend>
 
-            <table cellpadding="8">
-                <tr>
-                    <td><label for="fname">Full Name:</label></td>
-                    <td><input type="text" id="fname" name="fname" required></td>
+        <label for="fname">Full Name:</label><br>
+        <input type="text" id="fname" name="fname" required><br><br>
 
-                    <td><label for="email">Email:</label></td>
-                    <td><input type="email" id="email" name="email" required></td>
-                </tr>
-                <tr>
-                    <td><label for="phone">Phone:</label></td>
-                    <td><input type="tel" id="phone" name="phone" required></td>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
 
-                    <td><label for="dob">Date of Birth:</label></td>
-                    <td><input type="date" id="dob" name="dob" required></td>
-                </tr>
-                <tr>
-                    <td>Gender:</td>
-                    <td colspan="3">
-                        <input type="radio" id="male" name="gender" value="male" required>
-                        <label for="male">Male</label>
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
 
-                        <input type="radio" id="female" name="gender" value="female">
-                        <label for="female">Female</label>
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
 
-                        <input type="radio" id="other" name="gender" value="other">
-                        <label for="other">Other</label>
-                    </td>
-                </tr>
-            </table>
-        </fieldset>
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+      </fieldset>
 
-        <br>
+      <br>
 
-        <fieldset>
-            <legend>Food Staff Information</legend>
+      <fieldset>
+        <legend>Food Staff Information</legend>
 
-            <table cellpadding="8">
-                <tr>
-                    <td><label for="staffid">Food Staff ID:</label></td>
-                    <td><input type="text" id="staffid" name="staffid" required></td>
+        <label for="staffid">Food Staff ID:</label><br>
+        <input type="text" id="staffid" name="staffid" required><br><br>
 
-                    <td><label for="branch">Cinema Branch:</label></td>
-                    <td>
-                        <select id="branch" name="branch" required>
-                            <option value="">-- Select Branch --</option>
-                            <option value="main">Main Hall</option>
-                            <option value="mall">Mall Branch</option>
-                            <option value="city">City Center Branch</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label for="counter">Assigned Counter:</label></td>
-                    <td>
-                        <select id="counter" name="counter" required>
-                            <option value="">-- Select Counter --</option>
-                            <option value="popcorn">Popcorn Counter</option>
-                            <option value="beverage">Beverage Counter</option>
-                            <option value="snacks">Snacks Counter</option>
-                            <option value="delivery">Seat Delivery</option>
-                        </select>
-                    </td>
+        <label for="branch">Cinema Branch:</label><br>
+        <select id="branch" name="branch" required>
+          <option value="">-- Select Branch --</option>
+          <option value="main">Main Hall</option>
+          <option value="mall">Mall Branch</option>
+          <option value="city">City Center Branch</option>
+        </select><br><br>
 
-                    <td><label for="shift">Shift:</label></td>
-                    <td>
-                        <select id="shift" name="shift" required>
-                            <option value="">-- Select Shift --</option>
-                            <option value="morning">Morning</option>
-                            <option value="evening">Evening</option>
-                            <option value="night">Night</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label for="cert">Certificate No:</label></td>
-                    <td><input type="text" id="cert" name="cert" required></td>
+        <label for="counter">Assigned Counter:</label><br>
+        <select id="counter" name="counter" required>
+          <option value="">-- Select Counter --</option>
+          <option value="popcorn">Popcorn Counter</option>
+          <option value="beverage">Beverage Counter</option>
+          <option value="snacks">Snacks Counter</option>
+          <option value="delivery">Seat Delivery</option>
+        </select><br><br>
 
-                    <td><label for="exp">Years of Experience:</label></td>
-                    <td><input type="number" id="exp" name="exp" min="0" max="40"></td>
-                </tr>
-                <tr>
-                    <td><label for="joindate">Joining Date:</label></td>
-                    <td><input type="date" id="joindate" name="joindate" required></td>
+        <label for="shift">Shift:</label><br>
+        <select id="shift" name="shift" required>
+          <option value="">-- Select Shift --</option>
+          <option value="morning">Morning</option>
+          <option value="evening">Evening</option>
+          <option value="night">Night</option>
+        </select><br><br>
 
-                    <td><label for="emergency">Emergency Contact:</label></td>
-                    <td><input type="tel" id="emergency" name="emergency" required></td>
-                </tr>
-                <tr>
-                    <td>Specialty:</td>
-                    <td colspan="3">
-                        <input type="checkbox" id="s1" name="specialty" value="popcorn">
-                        <label for="s1">Popcorn</label>
+        <label for="cert">Food Handling Certificate No:</label><br>
+        <input type="text" id="cert" name="cert" required><br><br>
 
-                        <input type="checkbox" id="s2" name="specialty" value="drinks">
-                        <label for="s2">Drinks</label>
+        <label for="exp">Years of Experience:</label><br>
+        <input type="number" id="exp" name="exp" min="0" max="40"><br><br>
 
-                        <input type="checkbox" id="s3" name="specialty" value="fastfood">
-                        <label for="s3">Fast Food</label>
+        <label for="specialty">Specialty:</label><br>
+        <input type="checkbox" id="s1" name="specialty" value="popcorn">
+        <label for="s1">Popcorn</label>
+        <input type="checkbox" id="s2" name="specialty" value="drinks">
+        <label for="s2">Drinks</label>
+        <input type="checkbox" id="s3" name="specialty" value="fastfood">
+        <label for="s3">Fast Food</label>
+        <input type="checkbox" id="s4" name="specialty" value="combo">
+        <label for="s4">Combo Packs</label><br><br>
 
-                        <input type="checkbox" id="s4" name="specialty" value="combo">
-                        <label for="s4">Combo Packs</label>
-                    </td>
-                </tr>
-            </table>
-        </fieldset>
+        <label for="joindate">Joining Date:</label><br>
+        <input type="date" id="joindate" name="joindate" required><br><br>
 
-        <br>
+        <label for="emergency">Emergency Contact Number:</label><br>
+        <input type="tel" id="emergency" name="emergency" required>
+      </fieldset>
 
-        <fieldset>
-            <legend>Account Security</legend>
+      <br>
 
-            <table cellpadding="8">
-                <tr>
-                    <td><label for="pass">Password:</label></td>
-                    <td><input type="password" id="pass" name="pass" minlength="8" required></td>
+      <fieldset>
+        <legend>Account Security</legend>
 
-                    <td><label for="cpass">Confirm Password:</label></td>
-                    <td><input type="password" id="cpass" name="cpass" minlength="8" required></td>
-                </tr>
-            </table>
-        </fieldset>
+        <label for="pass">Password:</label><br>
+        <input type="password" id="pass" name="pass" minlength="8" required><br><br>
 
-        <br>
+        <label for="cpass">Confirm Password:</label><br>
+        <input type="password" id="cpass" name="cpass" minlength="8" required>
+      </fieldset>
 
-        <input type="submit" value="Register">
-        <input type="reset" value="Clear">
+      <br>
+      <input type="submit" value="Register">
+      <input type="reset" value="Clear">
 
     </form>
 
     <p>Already registered? <a href="../../commonui/login.html">Login here</a></p>
+
+  </div>
 
 </body>
 </html>
