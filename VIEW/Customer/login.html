@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - CineVerse</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <main class="main-content">
+        <form id="login-container">
+            <span class="login-badge">CineVerse</span>
+
+            <h1 class="login-title">Login</h1>
+            <p class="login-description">Sign in to your account</p>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter your password"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="role">Login As:</label>
+                <select id="role" name="role" required>
+                    <option value="admin">Admin</option>
+                    <option value="customer">Customer</option>
+                    <option value="staff">Staff</option>
+                </select>
+            </div>
+
+            <input
+                type="submit"
+                class="submit-button"
+                value="Login"
+            >
+            <a href="register.html">Don't have an account? Register here</a>
+        </form>
+    </main>
+
+    <button
+        type="button"
+        class="back-to-top"
+        onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+        aria-label="Back to top"
+    >↑</button>
+
+</body>
+</html>
