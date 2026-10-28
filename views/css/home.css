@@ -97,6 +97,49 @@ body {
     color: #e50914;
 }
 
+/* Register Dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown summary {
+    color: #ffffff;
+    padding: 10px;
+    cursor: pointer;
+    list-style: none;
+    border-radius: 5px;
+}
+
+.dropdown summary:hover,
+.dropdown details[open] > summary {
+    background-color: #e50914;
+    color: #ffffff;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    background-color: #222222;
+    border-top: 3px solid #e50914;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 15px;
+    color: #ffffff;
+    background-color: #222222;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.dropdown-content a:hover {
+    background-color: #e50914;
+    color: #ffffff;
+}
+
 /* Main Content */
 .main-content,
 .container {
@@ -362,68 +405,4 @@ img {
 ::selection {
     background-color: #e50914;
     color: #ffffff;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .navbar {
-        flex-wrap: wrap;
-        gap: 5px;
-        padding: 12px;
-    }
-
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 5px;
-    }
-
-    .dashboard-container {
-        width: 100%;
-        padding: 25px 15px;
-    }
-
-    .table-container {
-        width: 100%;
-        padding: 15px;
-    }
-
-    .footer {
-        flex-direction: column;
-        padding: 25px 20px;
-    }
-
-    .main-content,
-    .container {
-        padding: 25px 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    .header {
-        padding: 20px 10px;
-    }
-
-    #logo,
-    .logo {
-        font-size: 26px;
-    }
-
-    #tagline {
-        font-size: 14px;
-    }
-
-    .navbar a,
-    .nav-links a {
-        padding: 8px;
-        font-size: 14px;
-    }
-
-    .form-container {
-        padding: 20px 15px;
-    }
-
-    .footer {
-        gap: 15px;
-    }
 }

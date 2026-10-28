@@ -7,7 +7,7 @@
     <title>Home - CineVerse</title>
 
     <!-- External CSS -->
-    <link rel="stylesheet" href="./css/foodstaff.css">
+    <link rel="stylesheet" href="./css/home.css">
 </head>
 
 <body>
@@ -24,7 +24,22 @@
             <li><a href="home.html" class="active">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="register.html">Register</a></li>
+
+            <li class="dropdown">
+                <details>
+                    <summary>Register</summary>
+
+                    <div class="dropdown-content">
+                        <a href="register.html">Customer</a>
+                        <a href="staffregister.html">Staff</a>
+                        <a href="../foodstaff/view/foodstaffregister.html">
+                            Food Staff
+                        </a>
+                        <a href="adminregister.html">Admin</a>
+                    </div>
+                </details>
+            </li>
+
             <li><a href="login.html">Login</a></li>
         </ul>
     </nav>
@@ -40,9 +55,6 @@
                 movies and book seats online, while staff, food staff and
                 administrators manage shows, food orders and the whole system.
             </p>
-
-            <!-- Only the Login button remains -->
-            <a href="login.html" class="button">Login</a>
         </section>
 
         <section>
@@ -71,33 +83,9 @@
             </ul>
         </section>
 
-        <section>
-            <h2>Register as</h2>
-
-            <ul class="registration-list">
-                <li>
-                    Customer -
-                    <a href="register.html">Register</a>
-                </li>
-
-                <li>
-                    Staff -
-                    <a href="staffregister.html">Register</a>
-                </li>
-
-                <li>
-                    Food Staff -
-                    <a href="../foodstaff/view/foodstaffregister.html">Register</a>
-                </li>
-
-                <li>
-                    Admin -
-                    <a href="adminregister.html">Register</a>
-                </li>
-            </ul>
-        </section>
-
+        
     </main>
 
 </body>
+
 </html>
