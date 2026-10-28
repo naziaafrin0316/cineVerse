@@ -1,0 +1,119 @@
+/* Element selectors, font and text styling, background */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #222222;
+    background-color: #f4f4f8;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* ID selectors: logo / project name styling */
+#logo {
+    margin: 0;
+    font-size: 32px;
+    color: #ffd166;
+}
+
+#tagline {
+    margin: 5px 0 0 0;
+    color: #ffffff;
+}
+
+/* Header: background colour, padding, border, shadow */
+.header {
+    padding: 20px;
+    text-align: center;
+    background-color: #1b1b2f;
+    border-bottom: 4px solid #e63946;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation bar: horizontal menu, spacing, sticky position, z-index */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: #2d2d4a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar a {
+    display: block;
+    padding: 12px 24px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect and active page indication */
+.navbar a:hover {
+    background-color: #e63946;
+}
+
+.navbar a.active {
+    background-color: #e63946;
+}
+
+/* Page container: max-width responsive design */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Buttons: hover transition */
+.button,
+input[type="submit"],
+input[type="reset"] {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #e63946;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #b52a36;
+}
+
+/* Form container: box model, border-radius, box-shadow, overflow */
+.form-container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px 30px;
+    overflow: auto;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+input[type="password"],
+select {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #999999;
+    border-radius: 5px;
+}
