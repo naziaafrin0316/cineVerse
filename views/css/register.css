@@ -185,3 +185,25 @@ body {
 .back-to-top:hover {
     background-color: #b80710;
 }
+/* Individual Field Error Messages */
+.field-error {
+    color: #e50914;
+    font-size: 12px;
+    margin: 5px 0 0;
+    line-height: 1.4;
+}
+
+.field-error:empty {
+    display: none;
+}
+
+/* Registration Success Message */
+.register-message {
+    text-align: center;
+    font-size: 14px;
+    margin: 12px 0;
+}
+
+.register-message:empty {
+    display: none;
+}
